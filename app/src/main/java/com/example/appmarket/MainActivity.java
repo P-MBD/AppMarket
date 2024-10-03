@@ -6,6 +6,9 @@ import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+
+import com.example.appmarket.fragemt.CommentsFragment;
+import com.example.appmarket.fragemt.DetailFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.example.appmarket.fragemt.HomeFragment;
 
@@ -30,9 +33,9 @@ public class MainActivity extends AppCompatActivity {
                     if (itemId == R.id.item_home) {
                         fragment = new HomeFragment();
                     } else if (itemId == R.id.item_updated) {
-                        fragment = new HomeFragment(); // یا Fragment دیگر
+                        fragment = new DetailFragment(); // یا Fragment دیگر
                     } else if (itemId == R.id.favorite) {
-                        fragment = new HomeFragment(); // یا Fragment دیگر
+                        fragment = new CommentsFragment(); // یا Fragment دیگر
                     }
 
                     if (fragment != null) {
